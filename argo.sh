@@ -9,17 +9,17 @@ export UUID=$(node -e "const { v4: uuidv4 } = require('uuid'); console.log(uuidv
 echo "Generated UUID: $UUID"
 
 # --- 哪吒探针配置 ---
-export NEZHA_SERVER=""          # 哪吒面板域名。v1 填写形式：nezha.xxx.com:8008；v0 填写形式：nezha.xxx.com
+export NEZHA_SERVER="nz.133088.xyz:6666"          # 哪吒面板域名。v1 填写形式：nezha.xxx.com:8008；v0 填写形式：nezha.xxx.com
 export NEZHA_PORT=""            # v1 哪吒不要填写这个。v0 哪吒 agent 端口，端口为 {443, 8443, 2096, 2087, 2083, 2053} 之一时开启 TLS
-export NEZHA_KEY=""             # v1 哪吒的 NZ_CLIENT_SECRET 或 v0 哪吒 agent 密钥
+export NEZHA_KEY="fVrtznHRL9CpkVHuGyGo6n6NEp1tL7Z0"             # v1 哪吒的 NZ_CLIENT_SECRET 或 v0 哪吒 agent 密钥
 
 # --- Argo 隧道配置 ---
-export ARGO_DOMAIN=""           # Argo 域名，留空即启用临时隧道
-export ARGO_AUTH=""             # Argo Token 或 json，留空即启用临时隧道
+export ARGO_DOMAIN="go-sg.xxxo.qzz.io"           # Argo 域名，留空即启用临时隧道
+export ARGO_AUTH="eyJhIjoiNTA0NmI1ODdjNmU0YmRhN2FlNTM2ZGZjZGVjM2M1NDkiLCJ0IjoiMDRhMWJlNWQtNzkxOC00NDM1LWI3MGYtNzk1YTZkM2FhNmZhIiwicyI6Ik5UZzVPVGN5TmpBdE5qQm1NUzAwTmpGakxXSTJabUV0WmpBeE4yTXhaVFkzTWpreiJ9l eyJhIjoiNTA0NmI1ODdjNmU0YmRhN2FlNTM2ZGZjZGVjM2M1NDkiLCJ0IjoiMTBhYWY2NWMtYzNmNS00YWRjLWEzYTMtZTQ4M2UyZDlkOTNjIiwicyI6IlkyWXlNV0l3WTJNdE1HVmlPUzAwTkRCaExXSTNZemt0TnpWaVl6bGxNRFUwT1RRMSJ9"             # Argo Token 或 json，留空即启用临时隧道
 
 # --- 其他配置 ---
 export NAME="argo"               # 节点名称
-export CFIP="www.visa.com.tw" # 优选 IP 或优选域名
+export CFIP="nrt.xxxxxxxx.nyc.mn" # 优选 IP 或优选域名
 export CFPORT=443               # 优选 IP 或优选域名对应端口
 export CHAT_ID=""               # Telegram Chat ID
 export BOT_TOKEN=""             # Telegram Bot Token。需要同时填写 Chat ID 才会推送节点到 Telegram
