@@ -15,8 +15,7 @@ export NEZHA_KEY="fVrtznHRL9CpkVHuGyGo6n6NEp1tL7Z0"             # v1 哪吒的 N
 
 # --- Argo 隧道配置 ---
 export ARGO_DOMAIN="ar-us.xxxo.qzz.io"           # Argo 域名，留空即启用临时隧道
-export ARGO_AUTH="brew install cloudflared && 
-eyJhIjoiNTA0NmI1ODdjNmU0YmRhN2FlNTM2ZGZjZGVjM2M1NDkiLCJ0IjoiMDRhMWJlNWQtNzkxOC00NDM1LWI3MGYtNzk1YTZkM2FhNmZhIiwicyI6Ik5UZzVPVGN5TmpBdE5qQm1NUzAwTmpGakxXSTJabUV0WmpBeE4yTXhaVFkzTWpreiJ9"             # Argo Token 或 json，留空即启用临时隧道
+export ARGO_AUTH="eyJhIjoiNTA0NmI1ODdjNmU0YmRhN2FlNTM2ZGZjZGVjM2M1NDkiLCJ0IjoiMDRhMWJlNWQtNzkxOC00NDM1LWI3MGYtNzk1YTZkM2FhNmZhIiwicyI6Ik5UZzVPVGN5TmpBdE5qQm1NUzAwTmpGakxXSTJabUV0WmpBeE4yTXhaVFkzTWpreiJ9"             # Argo Token 或 json，留空即启用临时隧道
 
 # --- 其他配置 ---
 export NAME="argo"               # 节点名称
