@@ -1,12 +1,14 @@
 #!/bin/bash
 
-npm install uuid
+# --- 移除自动生成 UUID 的部分 ---
+# # npm install uuid
+# # export UUID=$(node -e "const { v4: uuidv4 } = require('uuid'); console.log(uuidv4());")
 
-# 使用 Node.js 脚本生成 UUID 并赋值给环境变量
-export UUID=$(node -e "const { v4: uuidv4 } = require('uuid'); console.log(uuidv4());")
+# --- 改为固定的 UUID ---
+export UUID="24f4ad19-2215-4f78-9fa5-704206f5ca8b" # 请替换为您希望使用的固定 UUID，例如：a1b2c3d4-e5f6-7890-1234-567890abcdef
 
-# 调试输出：确认 UUID 已生成
-echo "Generated UUID: $UUID"
+# 调试输出：确认 UUID 已设置
+echo "Using Fixed UUID: $UUID"
 
 # --- 哪吒探针配置 ---
 export NEZHA_SERVER="nz.133088.xyz:6666"          # 哪吒面板域名。v1 填写形式：nezha.xxx.com:8008；v0 填写形式：nezha.xxx.com
