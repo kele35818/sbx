@@ -18,8 +18,8 @@ export ARGO_DOMAIN="3.oxxx.qzz.io"           # Argo 域名，留空即启用临�
 export ARGO_AUTH="eyJhIjoiNTA0NmI1ODdjNmU0YmRhN2FlNTM2ZGZjZGVjM2M1NDkiLCJ0IjoiZDFjNjhmMjItM2Y2YS00MDY5LWFhYjAtYmFmNjk4MmFmMDc1IiwicyI6Ik4yTTVOelkyWkRFdE5tTTVZaTAwTnpOaExUaGlOamt0TURReU1tRmpZV05pTnpabCJ9"             # Argo Token 或 json，留空即启用临时隧道
 
 # --- 其他配置 ---
-export NAME="argo"               # 节点名称
-export CFIP="nrt.xxxxxxxx.nyc.mn" # 优选 IP 或优选域名
+export NAME="idx-argo"               # 节点名称
+export CFIP="nrt.cfip.oxxxx.de" # 优选 IP 或优选域名
 export CFPORT=443               # 优选 IP 或优选域名对应端口
 export CHAT_ID=""               # Telegram Chat ID
 export BOT_TOKEN=""             # Telegram Bot Token。需要同时填写 Chat ID 才会推送节点到 Telegram
