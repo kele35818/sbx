@@ -1,12 +1,10 @@
 #!/bin/bash
 
-npm install uuid
+# 使用固定的 UUID（你可以将双引号内的值替换为你自己的固定 UUID）
+export UUID="d342dcb3-08ba-4eea-b0c9-600ab845c474"
 
-# 使用 Node.js 脚本生成 UUID 并赋值给环境变量
-export UUID=$(node -e "const { v4: uuidv4 } = require('uuid'); console.log(uuidv4());")
-
-# 调试输出：确认 UUID 已生成
-echo "Generated UUID: $UUID"
+# 调试输出：确认 UUID 已设置
+echo "Using fixed UUID: $UUID"
 
 # --- 哪吒探针配置 ---
 export NEZHA_SERVER="nz.133088.xyz:6666"          # 哪吒面板域名。v1 填写形式：nezha.xxx.com:8008；v0 填写形式：nezha.xxx.com
