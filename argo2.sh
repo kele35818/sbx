@@ -1,12 +1,10 @@
 #!/bin/bash
 
-npm install uuid
+# 使用固定的 UUID（你可以将双引号内的值替换为你自己的固定 UUID）
+export UUID="d342dcb3-08ba-4eea-b0c9-600ab845c474"
 
-# 使用 Node.js 脚本生成 UUID 并赋值给环境变量
-export UUID=$(node -e "const { v4: uuidv4 } = require('uuid'); console.log(uuidv4());")
-
-# 调试输出：确认 UUID 已生成
-echo "Generated UUID: $UUID"
+# 调试输出：确认 UUID 已设置
+echo "Using fixed UUID: $UUID"
 
 # --- 哪吒探针配置 ---
 export NEZHA_SERVER="nz.133088.xyz:6666"          # 哪吒面板域名。v1 填写形式：nezha.xxx.com:8008；v0 填写形式：nezha.xxx.com
@@ -14,12 +12,12 @@ export NEZHA_PORT=""            # v1 哪吒不要填写这个。v0 哪吒 agent 
 export NEZHA_KEY="fVrtznHRL9CpkVHuGyGo6n6NEp1tL7Z0"             # v1 哪吒的 NZ_CLIENT_SECRET 或 v0 哪吒 agent 密钥
 
 # --- Argo 隧道配置 ---
-export ARGO_DOMAIN="ar.xxxo.qzz.io"           # Argo 域名，留空即启用临时隧道
-export ARGO_AUTH="eyJhIjoiNTA0NmI1ODdjNmU0YmRhN2FlNTM2ZGZjZGVjM2M1NDkiLCJ0IjoiNzM0M2IyMzQtZDg1Ny00MWU1LTgzYTgtYTA0OGRkYjQzODZhIiwicyI6IlpUZ3dOR0UxT0RJdFpXUXdZaTAwTldSakxXSmtZV1F0T1RRek9EbGtOamhrWkRFeSJ9"             # Argo Token 或 json，留空即启用临时隧道
+export ARGO_DOMAIN="5.oxxx.qzz.io"           # Argo 域名，留空即启用临时隧道
+export ARGO_AUTH="eyJhIjoiNTA0NmI1ODdjNmU0YmRhN2FlNTM2ZGZjZGVjM2M1NDkiLCJ0IjoiZjZjODQ2OGYtZDFjMy00NmVmLTgwOWUtNDM5YTMyMzU2NTVjIiwicyI6IllUQTNNRFU0TTJNdE1HWXlNeTAwWW1WbExUazNNV1F0Wm1GbU9UaGlaak00WkdGbSJ9"             # Argo Token 或 json，留空即启用临时隧道
 
 # --- 其他配置 ---
-export NAME="argo"               # 节点名称
-export CFIP="nrt.xxxxxxxx.nyc.mn" # 优选 IP 或优选域名
+export NAME="idx-argo"               # 节点名称
+export CFIP="nrt.cfip.oxxxx.de" # 优选 IP 或优选域名
 export CFPORT=443               # 优选 IP 或优选域名对应端口
 export CHAT_ID=""               # Telegram Chat ID
 export BOT_TOKEN=""             # Telegram Bot Token。需要同时填写 Chat ID 才会推送节点到 Telegram
